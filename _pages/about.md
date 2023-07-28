@@ -21,5 +21,5 @@ redirect_from:
 ## Recent News
 
 {% for post in site.news reversed limit:2 %}
-  {% include archive-single.html %}
+  {% include archive-single-talk.html %}
 {% endfor %}
