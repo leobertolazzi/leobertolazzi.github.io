@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-![speaking robots](/images/robots.png){: .align-right width="300px"}
-
 🧠 I am a master’s student in Cognitive Science at [CIMeC](https://www.cimec.unitn.it/en).
 
 🤖 My interests lie in topics at the intersection of Cognitive Science and AI. Specifically, evaluation methods for AI systems, Multimodal learning, Conversational AI.
