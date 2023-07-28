@@ -27,14 +27,7 @@ Skills
 * Deep Learning
 * Machine Learning
 * Python
-  * numpy
-  * pandas
-  * scikit-learn
-  * matplotlib
-  * NLTK
-  * PyTorch
-  * transformers
-  * selenium
+  * numpy, pandas, scikit-learn, matplotlib, NLTK, PyTorch, transformers, selenium
 * Git
 
 Publications
