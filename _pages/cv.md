@@ -24,6 +24,7 @@ Skills
 ======
 * Linguistics
 * Cognitive Science
+* Natural Language Processing
 * Deep Learning
 * Machine Learning
 * Python
