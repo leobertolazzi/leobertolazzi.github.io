@@ -18,8 +18,8 @@ redirect_from:
 
 ✍🏻 Please feel free to get in touch!
 
-## Recent News
+# Recent News
 
-{% for post in site.news reversed limit:2 %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+## July, 2023 📄 New Paper Accepted at INLG 2023!
+
+Very happy to share that our recent work “ChatGPT’s Information Seeking Strategy: Insights from the 20-Question Game” has been accepted at INLG 2023.
