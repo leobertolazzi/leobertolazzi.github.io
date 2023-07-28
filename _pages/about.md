@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-[](images/robots.png){: .align-right width="300px"}
+![speaking robots](robots.png){: .align-right width="300px"}
 
 🧠 I am a master’s student in Cognitive Science at [CIMeC](https://www.cimec.unitn.it/en).
 
@@ -16,4 +16,4 @@ redirect_from:
 
 📚 I'm currently working on my Master's Thesis, which focuses on evaluating how language models (ChatGPT in my case) and humans perform in the 20 Questions game.
 
-Please feel free to get in touch! :)
+✍🏻 Please feel free to get in touch!
