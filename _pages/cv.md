@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
+title: "Resume"
+permalink: /resume/
 author_profile: true
 redirect_from:
   - /resume
@@ -11,37 +11,34 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.A. in Philosophy, University of Trento, 2021
+* M.S. in Cognitive Science, University of Trento, ongoing
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2023: Research Assistant
+  * Center for Mind/Brain Sciences
+  * Supervisor: Raffaella Bernardi
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
+* Linguistics
+* Cognitive Science
+* Deep Learning
+* Machine Learning
+* Python
+  * 
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Git
 
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+<!---
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -57,3 +54,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+-->
