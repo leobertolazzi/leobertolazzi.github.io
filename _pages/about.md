@@ -21,4 +21,4 @@ redirect_from:
 <br>
 
 # Recent News
-## *July, 2023* 📄 New Paper Accepted at INLG 2023! 
+## `July, 2023` &nbsp;&nbsp; 📄 New Paper Accepted at INLG 2023! 
