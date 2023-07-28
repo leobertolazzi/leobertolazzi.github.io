@@ -2,7 +2,7 @@
 title: "📄 New Paper Accepted at INLG 2023!"
 collection: papers
 type: "Paper"
-permalink: /news/2023-paper
+permalink: /posts/INLG23
 date: 2023-07-26
 ---
 
