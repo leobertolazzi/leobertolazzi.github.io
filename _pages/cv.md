@@ -1,10 +1,10 @@
 ---
 layout: archive
-title: "Resume"
-permalink: /resume/
+title: "CV"
+permalink: /cv/
 author_profile: true
 redirect_from:
-  - /resume
+  - /cv
 ---
 
 {% include base_path %}
@@ -27,9 +27,14 @@ Skills
 * Deep Learning
 * Machine Learning
 * Python
-  * 
-  * Sub-skill 2.2
-  * Sub-skill 2.3
+  * numpy
+  * pandas
+  * scikit-learn
+  * matplotlib
+  * NLTK
+  * PyTorch
+  * transformers
+  * selenium
 * Git
 
 Publications
