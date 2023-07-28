@@ -5,4 +5,8 @@ permalink: /news/
 author_profile: true
 ---
 
-`2023 - 07` &nbsp;&nbsp;&nbsp; New paper accepted at INLG2023!
+{% include base_path %}
+
+{% for post in site.news reversed %}
+  {% include archive-single.html %}
+{% endfor %}
