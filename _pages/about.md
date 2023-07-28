@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![speaking robots](robots.png){: .align-right width="300px"}
+![speaking robots](images/robots.png){: .align-right width="300px"}
 
 🧠 I am a master’s student in Cognitive Science at [CIMeC](https://www.cimec.unitn.it/en).
 
