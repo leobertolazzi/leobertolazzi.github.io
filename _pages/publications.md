@@ -13,4 +13,4 @@ author_profile: true
 
 ## Peer-reviewed publications
 
-L. Bertolazzi, D. Mazzaccara, F. Merlo and R. Bernardi. ChatGPT's Information Seeking Strategy: Insights from the 20-Question Game. *Proceedings of the 16th International Conference on Natural Language Generation*. 2023"
+**L. Bertolazzi**, D. Mazzaccara, F. Merlo and R. Bernardi. ChatGPT's Information Seeking Strategy: Insights from the 20-Question Game. *Proceedings of the 16th International Conference on Natural Language Generation*. 2023.
