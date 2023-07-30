@@ -12,7 +12,7 @@ Ciao, I'm Leonardo! I am a master’s student in Cognitive Science at [CIMeC](ht
 
 My interests lie in topics at the intersection of Cognitive Science and AI. Specifically, evaluation methods for AI systems, Multimodal learning, Conversational AI.
 
-I'm currently working on my Master's Thesis, which focuses on evaluating how language models (ChatGPT in my case) and humans perform in the 20 Questions game.
+I'm currently working on my Master's Thesis, which focuses on evaluating how large language models and humans perform in the 20 Questions game.
 
 Please feel free to get in touch!
 
