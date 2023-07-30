@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Ciao, I'm Leonardo! 👋
+Ciao, I'm Leonardo! I am a master’s student in Cognitive Science at [CIMeC](https://www.cimec.unitn.it/en), University of Trento. 
 
-I am a master’s student in Cognitive Science at [CIMeC](https://www.cimec.unitn.it/en), University of Trento. My interests lie in topics at the intersection of Cognitive Science and AI. Specifically, evaluation methods for AI systems, Multimodal learning, Conversational AI.
+My interests lie in topics at the intersection of Cognitive Science and AI. Specifically, evaluation methods for AI systems, Multimodal learning, Conversational AI.
 
 I'm currently working on my Master's Thesis, which focuses on evaluating how language models (ChatGPT in my case) and humans perform in the 20 Questions game.
 
@@ -18,4 +18,4 @@ Please feel free to get in touch!
 
 ## Recent News
 
-`July, 2023` &nbsp;&nbsp; **📄 New Paper Accepted at INLG 2023!**
+### July, 2023: 📄 New Paper Accepted at INLG 2023!
