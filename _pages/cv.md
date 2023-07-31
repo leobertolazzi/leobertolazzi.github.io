@@ -18,11 +18,11 @@ redirect_from:
   
 ## Skills
 
-**Programming**: Python.
+* **Programming**: Python.
 
-**Libraries**: Numpy, Scipy, Pandas, Scikit‑learn, Matplotlib, PyTorch, Transformers, Selenium, Beautiful Soup, NLTK.
+* **Libraries**: Numpy, Scipy, Pandas, Scikit‑learn, Matplotlib, PyTorch, Transformers, Selenium, Beautiful Soup, NLTK.
 
-**Data Science**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
+* **Data Science**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
 
 <!---
 Publications
