@@ -14,7 +14,7 @@ redirect_from:
 * B.A. in Philosophy, University of Trento, 2021
 
 ## Work experience
-* March 2023 - June 2023: Research intern, CIMeC, [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic), Italy
+* March 2023 - June 2023: Research Intern, CIMeC, [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic), Italy
   
 ## Skills
 
