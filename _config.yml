@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Leo's homepage"
+title                    : "Leonardo Bertolazzi"
 title_separator          : "-"
 name                     : &name "Leonardo Bertolazzi"
 description              : &description "personal description"
