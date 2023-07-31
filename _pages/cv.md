@@ -17,13 +17,12 @@ redirect_from:
 * March 2023 - June 2023: Research intern, CIMeC, [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic), Italy
   
 ## Skills
-* Linguistics
-* Cognitive Science
-* Natural Language Processing
-* Deep Learning
-* Machine Learning
-* Python
-* Git
+
+**Programming**: Python.
+
+**Libraries**: Numpy, Scipy, Pandas, Scikit‑learn, Matplotlib, PyTorch, Transformers, Selenium, Beautiful Soup, NLTK.
+
+**Data Science**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
 
 <!---
 Publications
