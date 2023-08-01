@@ -11,13 +11,13 @@ redirect_from:
 
 ## Education
 
-M.Sc. in Cognitive Science, University of Trento, ongoing
+* M.Sc. in Cognitive Science, University of Trento, ongoing
 
-B.A. in Philosophy, University of Trento, 2021
+* B.A. in Philosophy, University of Trento, 2021
 
 ## Work experience
 
-March 2023 - June 2023: Research Intern @ [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic)
+* March 2023 - June 2023: Research Intern @ [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic)
   
 ## Skills
 
