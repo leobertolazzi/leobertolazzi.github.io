@@ -10,19 +10,20 @@ redirect_from:
 {% include base_path %}
 
 ## Education
-* M.S. in Cognitive Science, University of Trento, ongoing
-* B.A. in Philosophy, University of Trento, 2021
+
+M.Sc. in Cognitive Science, University of Trento, ongoing
+
+B.A. in Philosophy, University of Trento, 2021
 
 ## Work experience
-* March 2023 - June 2023: Research Intern, CIMeC, [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic), Italy
+
+March 2023 - June 2023: Research Intern @ [CLIC](https://www.cimec.unitn.it/en/71/language-interaction-and-computation-laboratory-clic)
   
 ## Skills
 
-* **Programming**: Python.
-
-* **Libraries**: Numpy, Scipy, Pandas, Scikit‑learn, Matplotlib, PyTorch, Transformers, Selenium, Beautiful Soup, NLTK.
-
-* **Data Science**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
+**Programming**: Python.<br>
+**Libraries**: Numpy, Scipy, Pandas, Scikit‑learn, Matplotlib, PyTorch, Transformers, Selenium, Beautiful Soup, NLTK.<br>
+**Data Science**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
 
 <!---
 Publications
