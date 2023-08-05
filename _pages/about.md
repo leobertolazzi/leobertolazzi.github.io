@@ -18,4 +18,4 @@ If you have any questions about my research or if you're interested in collabora
 
 ## Recent News
 
-* ### July, 2023: 📄 New Paper Accepted at INLG 2023!
+* **July, 2023: 📄 New Paper Accepted at INLG 2023!**
