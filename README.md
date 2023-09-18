@@ -1,1 +1,2 @@
-Personal website created with the [academicpages](https://github.com/academicpages/academicpages.github.io) template.
+Personal website created with [this](https://github.com/sho-kawano/sho-kawano.github.io) template.
+
