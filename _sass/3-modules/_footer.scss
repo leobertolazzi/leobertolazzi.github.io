@@ -52,9 +52,10 @@
   display: inline-block;
   font-size: large;
   color: $dark;
-  margin: 1em auto;
+  margin-right: 5px;
+  margin-left: 5px;
   &:hover {
-    color: $primary-color;
+    color: $secondary-color;
     transform: translate(0px, -1px);
   }
 }
