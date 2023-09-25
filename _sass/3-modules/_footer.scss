@@ -50,11 +50,15 @@
 
 .contact__link {
   display: inline-block;
-  font-size: 15px;
+  font-size: xx-large;
   color: $secondary-color;
   text-decoration: underline;
   &:hover {
     color: $primary-color;
     transform: translate(0px, -1px);
   }
+}
+
+.contact__link a {
+  color: $dark;
 }
