@@ -54,8 +54,11 @@
   color: $dark;
   margin-right: 5px;
   margin-left: 5px;
-  &:hover {
-    color: $gray-dark;
-    transform: translate(0px, -1px);
+  a {
+    color: $dark
+    &:hover {
+      color: $gray-dark;
+      transform: translate(0px, -1px);
+  }
   }
 }
