@@ -51,14 +51,13 @@
 .contact__link {
   display: inline-block;
   font-size: large;
-  color: $dark;
   margin-right: 5px;
   margin-left: 5px;
   a {
     color: $dark;
-    &:hover {
-      color: $gray-dark;
-      transform: translate(0px, -1px);
   }
+  &:hover {
+    color: $gray-dark;
+    transform: translate(0px, -1px);
   }
 }
