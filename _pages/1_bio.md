@@ -9,7 +9,7 @@ redirect_from:
 
 ## Education
 
-* PhD in Information Engineering and Computer Science, University of Trento, 2023
+* PhD in Information Engineering and Computer Science, University of Trento, ongoing
 
 * M.Sc. in Cognitive Science, University of Trento, 2023
 
