@@ -5,6 +5,9 @@ permalink: /news/
 author_profile: true
 ---
 
+*   **October, 2023: 🎓 Master's Degree in Cognitive Science!**<br>
+    On October 11, 2023, I received my master's degree in Cognitive Science from [CIMeC, University of Trento](https://www.cimec.unitn.it/en)!
+
 *   **September, 2023: 🎉 Best Paper Award: Evaluation!**<br>
     Our paper “ChatGPT’s Information Seeking Strategy: Insights from the 20-Questions Game” received the best paper award in the category “Evaluation" at INLG 2023.
 

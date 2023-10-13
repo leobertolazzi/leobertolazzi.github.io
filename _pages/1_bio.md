@@ -9,7 +9,9 @@ redirect_from:
 
 ## Education
 
-* M.Sc. in Cognitive Science, University of Trento, ongoing
+* PhD in Information Engineering and Computer Science, University of Trento, 2023
+
+* M.Sc. in Cognitive Science, University of Trento, 2023
 
 * B.A. in Philosophy, University of Trento, 2021
 
@@ -21,7 +23,7 @@ redirect_from:
 
 **Programming**: Python.<br>
 **Libraries**: Numpy, Scipy, Pandas, Scikit‑learn, Matplotlib, PyTorch, Transformers, Selenium, Beautiful Soup, NLTK.<br>
-**Data Science**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
+**Data Science and AI**: NLP, CV, Data Visualisation, Web Scraping, Experimental Design, APIs, Git, Shell (Bash/Zsh).
 
 <!---
 Publications
