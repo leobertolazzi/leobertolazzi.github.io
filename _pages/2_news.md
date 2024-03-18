@@ -5,6 +5,9 @@ permalink: /news/
 author_profile: true
 ---
 
+*   **November, 2023: 🏛️ Starting my PhD!**<br>
+    On November 1, 2023, I officially started the PhD in Information Engineering and Computer Science at the [University of Trento](https://www.disi.unitn.it/), Italy.
+
 *   **October, 2023: 🎓 Master's Degree in Cognitive Science!**<br>
     On October 11, 2023, I received my master's degree in Cognitive Science from [CIMeC, University of Trento](https://www.cimec.unitn.it/en)!
 

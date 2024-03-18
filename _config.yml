@@ -12,7 +12,10 @@ author:
   job: Ciao, I'm Leonardo!
   bio: |+
     <br />
-    I'm a PhD student in Information Engineering and Computer Science at <a href="https://www.disi.unitn.it/">University of Trento</a>, Italy. My research interests lie at the intersection of Cognitive Science and AI, with a focus on evaluation methods for AI systems, conversational AI, and multimodality.
+    I'm a PhD student in Information Engineering and Computer Science at <a href="https://www.disi.unitn.it/">University of Trento</a>, Italy. 
+    <br />
+    <br />
+    My research interests lie at the intersection of Cognitive Science 🧠 and AI 🦿. Currently, I am focused on reasoning in LLMs 🤖.
     <br />
     <br />
     If you have any questions about my research or if you're interested in collaborating, please feel free to get in touch!
@@ -20,7 +23,7 @@ author:
   email: leonardo.bertolazzi@unitn.it
   scholar: https://scholar.google.com/citations?user=dJ6WZ1YAAAAJ&hl=en
   github: https://github.com/leobertolazzi
-  last_update:  December 2023
+  last_update:  March 2024
   twitter: https://twitter.com/leo_bertolazzi
   linkedin: https://www.linkedin.com/in/leonardo-bertolazzi
 
