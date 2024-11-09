@@ -21,6 +21,20 @@
 
 
     
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA%2fG-123123-12"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA\/G-123123-12');
+        }
+      </script>
 
 </head><body class="container d-flex flex-column min-vh-100">
 
@@ -68,7 +82,7 @@
 </div>
 
 
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui justo. Sed bibendum sollicitudin neque, et iaculis ligula dapibus eget. Etiam faucibus augue non posuere blandit. Phasellus ex ex, ultricies quis eleifend vel, imperdiet a felis. Sed ipsum velit, ullamcorper nec lacus fermentum, ullamcorper sagittis libero. Pellentesque hendrerit quam eget nunc ullamcorper mattis. Etiam sed nisi ac ipsum semper interdum. Nunc vulputate vitae nibh vitae convallis. Cras in ante arcu.</div>
+    <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dui justo. Sed bibendum sollicitudin neque, et iaculis ligula dapibus eget. Etiam faucibus augue non posuere blandit. Phasellus ex ex, ultricies quis eleifend vel, imperdiet a felis. Sed ipsum velit, ullamcorper nec lacus fermentum, ullamcorper sagittis libero. Pellentesque hendrerit quam eget nunc ullamcorper mattis. Etiam sed nisi ac ipsum semper interdum. Nunc vulputate vitae nibh vitae convallis. Cras in ante arcu. Aliquam …</p></div>
 
 
 
