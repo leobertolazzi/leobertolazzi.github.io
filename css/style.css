@@ -1,11 +1,10 @@
-
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
 }
 
 a {
-    color: #0066FF;
+    color: #2E8B57;
 }
 
 a:hover {
@@ -16,7 +15,7 @@ a:hover {
 h2 code {
   font-family: Consolas,"courier new";
   /* background-color: #f1f1f1; */
-  background-color: #0066FF;
+  background-color: #2E8B57;
   color: white;
   padding: 2px;
 }
@@ -48,7 +47,7 @@ h2 code {
 }
 
 .main_color  {
-    color: #0066FF;
+    color: #2E8B57;
 }
 
 .secondary_color {
@@ -171,7 +170,7 @@ h2 code {
     transition-timing-function: ease-in-out;
 
     border-radius: 50%;
-    background-color: #33B3FF;
+    background-color: #3CB371;
     color: white;
 }
 
@@ -198,7 +197,7 @@ h2 code {
     transition-timing-function: ease-in-out;
 
     border-radius: 50%;
-    background-color: #33B3FF;
+    background-color: #3CB371;
     color: white;
 }
 
@@ -215,18 +214,18 @@ h2 code {
 }
 
 .pagination a  {
-    color: #0066FF;
+    color: #2E8B57;
     size: 100%;
 }
 
 .pagination .page_link  {
     font-weight: bold;
-    background-color: #0066FF;
+    background-color: #2E8B57;
 }
 
 .page-item.active .page-link {
     border-color: black;
-    background-color: #0066FF;
+    background-color: #2E8B57;
     font-weight: bold;
     color: white;
 }
@@ -238,7 +237,7 @@ h2 code {
 .tags_navigation .tag {
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
-    background-color: #0066FF;
+    background-color: #2E8B57;
     color: aliceblue;
     padding-left: .5%;
     padding-right: .5%;
@@ -256,7 +255,7 @@ h2 code {
 .blog_nav_bar .item {
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
-    background-color: #0066FF;
+    background-color: #2E8B57;
     color: aliceblue;
     padding-left: .5%;
     padding-right: .5%;
