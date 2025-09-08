@@ -4,13 +4,13 @@ body {
 }
 
 a {
-    color: #8A2BE2;
+    color: #6B46C1;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #6A1B9A;
+    color: #553C9A;
 }
 
 h2 code {
@@ -168,7 +168,7 @@ h2 code {
 .publication .section-3 a{
     padding: .15%;
     font-family: 'Ubuntu Mono', serif;
-    color: #8A2BE2;
+    color: #6B46C1;
     font-weight: normal;
     font-size: normal;
 }
@@ -179,7 +179,7 @@ h2 code {
     transition-timing-function: ease-in-out;
 
     border-radius: 50%;
-    background-color: #8A2BE2;
+    background-color: #6B46C1;
     color: white;
 }
 
@@ -199,7 +199,7 @@ h2 code {
 .projects .project a{
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
-    color: #8A2BE2;
+    color: #6B46C1;
     font-weight: bold;
 }
 .projects .project .section-2 a:hover {
@@ -236,7 +236,7 @@ h2 code {
 }
 
 .pagination a  {
-    color: #8A2BE2;
+    color: #6B46C1;
     size: 100%;
     font-weight: bold;
 }
