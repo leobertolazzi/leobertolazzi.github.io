@@ -4,20 +4,21 @@ body {
 }
 
 a {
-    color: #2E8B57;
+    color: #8A2BE2;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #050517;
+    color: #6A1B9A;
 }
 
 h2 code {
-  font-family: Consolas,"courier new";
-  /* background-color: #f1f1f1; */
-  background-color: #2E8B57;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #000000;
   color: white;
   padding: 2px;
+  font-weight: 700;
 }
 
 #TableOfContents ul {
@@ -47,7 +48,9 @@ h2 code {
 }
 
 .main_color  {
-    color: #2E8B57;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .secondary_color {
@@ -74,6 +77,8 @@ h2 code {
 
 .about #full_name {
     font-size: x-large;
+    font-weight: 800;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .about .affiliations #title {
@@ -162,6 +167,10 @@ h2 code {
 
 .publication .section-3 a{
     padding: .15%;
+    font-family: 'Ubuntu Mono', serif;
+    color: #8A2BE2;
+    font-weight: normal;
+    font-size: normal;
 }
 
 .publication .section-3 a:hover {
@@ -170,7 +179,7 @@ h2 code {
     transition-timing-function: ease-in-out;
 
     border-radius: 50%;
-    background-color: #3CB371;
+    background-color: #8A2BE2;
     color: white;
 }
 
@@ -190,6 +199,8 @@ h2 code {
 .projects .project a{
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
+    color: #8A2BE2;
+    font-weight: bold;
 }
 .projects .project .section-2 a:hover {
     transition-property: background-color;
@@ -197,13 +208,24 @@ h2 code {
     transition-timing-function: ease-in-out;
 
     border-radius: 50%;
-    background-color: #3CB371;
+    background-color: #000000;
     color: white;
 }
 
 
 .section-title {
     margin-top: 2.5%;
+    font-weight: 700;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.section-title:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 2%;
 }
 
 .copy_right {
@@ -214,18 +236,19 @@ h2 code {
 }
 
 .pagination a  {
-    color: #2E8B57;
+    color: #8A2BE2;
     size: 100%;
+    font-weight: bold;
 }
 
 .pagination .page_link  {
     font-weight: bold;
-    background-color: #2E8B57;
+    background-color: #000000;
 }
 
 .page-item.active .page-link {
     border-color: black;
-    background-color: #2E8B57;
+    background-color: #000000;
     font-weight: bold;
     color: white;
 }
@@ -237,10 +260,11 @@ h2 code {
 .tags_navigation .tag {
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
-    background-color: #2E8B57;
+    background-color: #000000;
     color: aliceblue;
     padding-left: .5%;
     padding-right: .5%;
+    font-weight: bold;
 }
 
 .tags_navigation .tag:hover {
@@ -255,10 +279,11 @@ h2 code {
 .blog_nav_bar .item {
     font-family: 'Ubuntu Mono', serif;
     padding: .15%;
-    background-color: #2E8B57;
+    background-color: #000000;
     color: aliceblue;
     padding-left: .5%;
     padding-right: .5%;
+    font-weight: bold;
 }
 
 .reading_time {
