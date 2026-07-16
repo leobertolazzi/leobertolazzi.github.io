@@ -442,10 +442,10 @@ main {
 
 .education-item {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    gap: .6rem 1rem;
-    align-items: baseline;
-    padding: .75rem 0;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .6rem;
+    align-items: center;
+    padding: .45rem 0;
 }
 
 .education-item::before {
@@ -457,29 +457,17 @@ main {
     line-height: 1;
 }
 
-.education-item > div {
+.education-item p {
+    margin: 0;
     min-width: 0;
     white-space: nowrap;
 }
 
-.education-item strong,
-.education-item span {
-    display: inline;
-}
-
-.education-item span::before {
-    content: " — ";
-}
-
-.education-item span,
-.education-item time {
+.education-date {
     color: #6c757d;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: .86rem;
-}
-
-.education-item time {
-    white-space: nowrap;
+    font-size: .95rem;
+    vertical-align: baseline;
 }
 
 .scroll-panel {
@@ -536,6 +524,8 @@ main {
 
 .news_list li {
     padding: .7rem .1rem;
+    font-weight: 600;
+    line-height: 1.45;
 }
 
 .news_list li + li {
@@ -547,6 +537,25 @@ main {
     height: 17px;
     color: #6B46C1;
     vertical-align: -3px;
+}
+
+.news_list .secondary_font {
+    display: block;
+    margin: .25rem 0 0 1.55rem;
+    font-family: 'Inter', sans-serif;
+    font-size: .88rem;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.news-date {
+    margin-left: .45rem;
+    color: #6c757d;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .95rem;
+    font-weight: 400;
+    vertical-align: baseline;
+    white-space: nowrap;
 }
 
 .section-subtitle {
@@ -569,16 +578,37 @@ main {
 }
 
 .publication .section-1 > span:first-child {
+    display: block;
+    margin-bottom: .22rem;
     font-weight: 600;
+    line-height: 1.4;
+}
+
+.publication .section-1 .publication-date,
+.publication .section-1 .publication-name {
+    font-size: .82rem;
+    line-height: 1.4;
 }
 
 .publication .section-2 {
-    margin: .35rem 0 .25rem;
+    margin: .42rem 0 .35rem;
+    font-size: .84rem;
     line-height: 1.45;
 }
 
 .publication .section-3 {
     margin-top: 0;
+}
+
+.publication .section-3 a {
+    display: inline-block;
+    margin-right: .22rem;
+    padding: .04rem .3rem;
+    border: 1px solid #d7cdef;
+    border-radius: 5px !important;
+    background: #fff;
+    font-size: .72rem;
+    line-height: 1.35;
 }
 
 footer {
@@ -650,10 +680,10 @@ footer {
     }
 
     .education-item {
-        grid-template-columns: auto minmax(0, 1fr) auto;
+        grid-template-columns: auto minmax(0, 1fr);
     }
 
-    .education-item > div {
+    .education-item p {
         white-space: normal;
     }
 
