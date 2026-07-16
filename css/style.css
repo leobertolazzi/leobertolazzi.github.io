@@ -295,3 +295,369 @@ h2 code {
 .read_more {
     margin-top: 1%;
 }
+
+/* One-page academic profile */
+html {
+    scroll-behavior: smooth;
+}
+
+body.container {
+    width: min(100% - 2.5rem, 780px);
+    max-width: 780px;
+    padding: 0;
+    line-height: 1.65;
+}
+
+.site-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2.4rem 0 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.identity h1 {
+    margin: 0;
+    color: #000000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: clamp(1.7rem, 4vw, 2.1rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.affiliation {
+    margin: .45rem 0 0;
+    color: #6c757d;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .88rem;
+}
+
+.header-email {
+    padding-bottom: .05rem;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .93rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+main {
+    width: 100%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 245px minmax(0, 1fr);
+    gap: 1.6rem;
+    align-items: center;
+    width: 100%;
+    margin: 1.9rem 0 0;
+}
+
+.portrait-column {
+    width: 245px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    text-align: center;
+}
+
+#profile_picture {
+    display: block;
+    width: 245px;
+    height: 245px;
+    min-height: 0;
+    flex: none;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.about .socials {
+    display: flex;
+    justify-content: center;
+    gap: .95rem;
+    margin-top: .7rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.about .socials a {
+    margin: 0;
+}
+
+.socials i {
+    font-size: 2rem;
+}
+
+.introduction {
+    width: 100%;
+    text-align: left;
+    font-size: .95rem;
+}
+
+.introduction p {
+    margin: 0 0 .85rem;
+}
+
+.page-section {
+    width: 100%;
+    scroll-margin-top: 1rem;
+}
+
+.page-section > .row,
+.page-section > .row > .col > .row {
+    width: 100% !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.page-section > .row > .col,
+.page-section > .row > .col > .row > .col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.page-section .section-title {
+    width: 100%;
+    margin: 2.25rem 0 .85rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.page-section .section-title::before {
+    margin-bottom: .95rem;
+}
+
+.education-list {
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.education-item {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: .6rem 1rem;
+    align-items: baseline;
+    padding: .75rem 0;
+}
+
+.education-item::before {
+    content: "\2022";
+    align-self: center;
+    color: #071013;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.education-item > div {
+    min-width: 0;
+    white-space: nowrap;
+}
+
+.education-item strong,
+.education-item span {
+    display: inline;
+}
+
+.education-item span::before {
+    content: " — ";
+}
+
+.education-item span,
+.education-item time {
+    color: #6c757d;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: .86rem;
+}
+
+.education-item time {
+    white-space: nowrap;
+}
+
+.scroll-panel {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    margin-top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
+    border: 1px solid #d9d9dc;
+    border-radius: 10px;
+    background: #f5f5f6;
+    background-clip: padding-box;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-color: #6B46C1 #f1f1f1;
+    scrollbar-width: thin;
+}
+
+.scroll-panel > .col,
+.scroll-panel .news_list,
+.scroll-panel .publication,
+.scroll-panel .section-1,
+.scroll-panel .section-2,
+.scroll-panel .section-3 {
+    background-color: #f5f5f6;
+}
+
+.scroll-panel:focus-visible {
+    outline: 2px solid #6B46C1;
+    outline-offset: 3px;
+}
+
+.scroll-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-panel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll-panel::-webkit-scrollbar-thumb {
+    background: #6B46C1;
+}
+
+.news_list {
+    margin: 0;
+    padding: .25rem 1.1rem;
+}
+
+.news_list li {
+    padding: .7rem .1rem;
+}
+
+.news_list li + li {
+    border-top: 1px solid #e7e7e7;
+}
+
+.news_list svg {
+    width: 17px;
+    height: 17px;
+    color: #6B46C1;
+    vertical-align: -3px;
+}
+
+.section-subtitle {
+    margin: -.55rem 0 .85rem;
+    font-size: .88rem;
+}
+
+.scroll-panel.publications > .col {
+    padding: .25rem 0 .85rem;
+}
+
+.publications .publication {
+    box-sizing: border-box;
+    margin: 0;
+    padding: .85rem 1.25rem;
+}
+
+.publications .publication + .publication {
+    border-top: 1px solid #e7e7e7;
+}
+
+.publication .section-1 > span:first-child {
+    font-weight: 600;
+}
+
+.publication .section-2 {
+    margin: .35rem 0 .25rem;
+    line-height: 1.45;
+}
+
+.publication .section-3 {
+    margin-top: 0;
+}
+
+footer {
+    width: 100%;
+    margin-top: 3rem !important;
+    padding: 1.2rem 0 2rem;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 720px) {
+    body.container {
+        width: min(100% - 2rem, 780px);
+    }
+
+    .site-header {
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .header-email {
+        display: inline-block;
+        margin-top: .7rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 1.35rem;
+    }
+
+    .portrait-column {
+        width: 190px;
+        margin: 0;
+    }
+
+    #profile_picture {
+        width: 190px;
+        height: 190px;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero {
+        display: block;
+        margin-top: 1.6rem;
+    }
+
+    .portrait-column {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1.4rem;
+        text-align: center;
+    }
+
+    #profile_picture {
+        width: 150px;
+        height: 150px;
+        min-height: 0;
+        flex: none;
+        margin: 0 auto;
+    }
+
+    .socials {
+        justify-content: center;
+        margin-top: .65rem;
+    }
+
+    .education-item {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+    }
+
+    .education-item > div {
+        white-space: normal;
+    }
+
+    .scroll-panel {
+        max-height: 340px;
+    }
+}
