@@ -528,6 +528,10 @@ main {
 }
 
 .news_list li {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    column-gap: .85rem;
+    align-items: start;
     padding: .7rem .1rem;
     font-weight: 600;
     line-height: 1.45;
@@ -538,15 +542,22 @@ main {
 }
 
 .news_list svg {
+    flex: 0 0 auto;
     width: 17px;
     height: 17px;
-    color: #6B46C1;
-    vertical-align: -3px;
+    margin: .2rem 0 0;
+    color: currentColor;
+}
+
+.news-heading {
+    display: flex;
+    gap: .45rem;
+    align-items: flex-start;
 }
 
 .news_list .secondary_font {
     display: block;
-    margin: .25rem 0 0 1.55rem;
+    margin: .25rem 0 0;
     font-family: 'Inter', sans-serif;
     font-size: .88rem;
     font-weight: 400;
@@ -554,7 +565,7 @@ main {
 }
 
 .news-date {
-    margin-left: .45rem;
+    padding-top: .05rem;
     color: #6c757d;
     font-family: 'Ubuntu Mono', monospace;
     font-size: .95rem;
@@ -694,5 +705,15 @@ footer {
 
     .scroll-panel {
         max-height: 340px;
+    }
+
+    .news_list {
+        padding-right: .7rem;
+        padding-left: .7rem;
+    }
+
+    .news_list li {
+        grid-template-columns: 4.5rem minmax(0, 1fr);
+        column-gap: .6rem;
     }
 }
