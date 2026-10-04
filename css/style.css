@@ -541,7 +541,7 @@ main {
 
 .publications .publication {
     display: grid;
-    grid-template-columns: 4.6rem minmax(0, 1fr);
+    grid-template-columns: 4.6rem minmax(0, 1fr) auto;
     column-gap: .85rem;
     align-items: start;
     box-sizing: border-box;
@@ -664,18 +664,48 @@ main {
 }
 
 .pub-links a {
-    margin-right: .55rem;
+    display: inline-block;
+    margin-right: .3rem;
+    padding: .04rem .38rem;
+    border: 1px solid #ddd3f0;
+    border-radius: 999px;
+    background: #fff;
     color: #6B46C1;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: .78rem;
+    font-size: .6rem;
     font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    line-height: 1.4;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+.pub-links-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .3rem;
+    padding-top: .15rem;
+}
+
+.pub-links-col .pub-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .3rem;
+}
+
+.pub-links-col .pub-links a {
+    margin-right: 0;
+    text-align: center;
 }
 
 .pub-links a:hover {
-    color: #553C9A;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    border-color: #6B46C1;
+    background: #6B46C1;
+    color: #fff;
+    text-decoration: none;
 }
 
 .pub-archive {
@@ -777,7 +807,7 @@ footer {
 
 @media (max-width: 520px) {
     .publications .publication {
-        grid-template-columns: 4rem minmax(0, 1fr);
+        grid-template-columns: 3.6rem minmax(0, 1fr) auto;
         column-gap: .6rem;
         padding: .6rem 0;
     }
