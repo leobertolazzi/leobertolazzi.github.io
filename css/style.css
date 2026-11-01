@@ -1,36 +1,26 @@
 /* ==========================================================================
    Color-block typographic redesign
-   Palette: ink / cream + signal red, cobalt, highlighter yellow
+   Palette: ink + four greys + one sky-blue accent
    Type: Space Grotesk (display) · Inter (body) · Space Mono (meta)
    No gradients, shadows or rounded corners. Flat blocks, sharp edges.
    ========================================================================== */
 
 :root {
     --ink: #161616;
-    --backdrop: #e6e6e2;
-    --cream: #f5f5f2;
-
-    /* Airy shades of grey for the rectangular section backgrounds */
-    --grey-100: #f5f5f2;
-    --grey-200: #e6e6e2;
-    --grey-300: #e6e6e2;
-    --grey-700: #363636;
-    --grey-800: #e5e4df;
-    --bar: #d3d3cf; /* header + footer background */
-
-    /* Single accent color: sky / ice blue */
-    --yellow: #7cc6fe;
-    --red: var(--ink);
-    --blue: var(--ink);
-
-    /* High-contrast secondary text & rule tokens */
     --ink-muted: #2e2e2e;
-    --cream-muted: #2e2e2e;
+
+    /* Four surface greys, from paper to framing bar */
+    --grey-100: #f7f6f2; /* hero + publications */
+    --grey-200: #f0efea; /* news + outer backdrop */
+    --grey-300: #deddd7; /* experience */
+    --bar: #d3d3cf;      /* header + footer */
+
+    /* Single accent colour: sky / ice blue */
+    --yellow: #7cc6fe;
+
     --ink-12: rgba(22, 22, 22, 0.12);
     --ink-18: rgba(22, 22, 22, 0.16);
     --ink-25: rgba(22, 22, 22, 0.18);
-    --cream-25: rgba(22, 22, 22, 0.16);
-    --cream-60: rgba(22, 22, 22, 0.65);
 
     --font-display: "Space Grotesk", "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,14 +42,14 @@
 }
 
 html {
-    background: var(--backdrop);
+    background: var(--grey-200);
     scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--font-body);
     color: var(--ink);
-    background: var(--cream);
+    background: var(--grey-100);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -70,7 +60,7 @@ body.home {
     max-width: 840px;
     margin: 0 auto;
     padding: 0;
-    background: var(--cream);
+    background: var(--grey-100);
     border-left: 1.5px solid var(--ink);
     border-right: 1.5px solid var(--ink);
     line-height: 1.65;
@@ -167,15 +157,6 @@ footer {
     box-decoration-break: clone;
 }
 
-.hl--blue {
-    color: var(--cream);
-    background: var(--blue);
-}
-
-.hl--red {
-    color: var(--ink);
-    background: var(--red);
-}
 
 /* ==========================================================================
    HOME — masthead
@@ -294,7 +275,7 @@ main > section::before {
     font-weight: 700;
     line-height: 0.75;
     letter-spacing: -0.06em;
-    color: var(--block-num, var(--red));
+    color: var(--block-num, var(--ink));
     opacity: 0.95;
     pointer-events: none;
 }
@@ -355,11 +336,11 @@ main > section::before {
     align-items: center;
     gap: 0.9rem;
     width: auto;
-    margin: 0 -1.35rem 0 0;
-    padding: clamp(1.35rem, 2.3vw, 1.55rem) clamp(1.1rem, 2vw, 1.35rem);
-    background: var(--grey-200);
+    margin: 0;
+    padding: clamp(1.35rem, 2.3vw, 1.55rem) clamp(0.8rem, 1.4vw, 1rem) clamp(1.35rem, 2.3vw, 1.55rem) clamp(1.1rem, 2vw, 1.35rem);
+    background: transparent;
     color: var(--ink);
-    border-right: 1.5px solid var(--ink);
+    border-right: 0;
 }
 
 #profile_picture {
@@ -418,7 +399,7 @@ main > section::before {
     width: auto;
     min-width: 0;
     padding: clamp(1.4rem, 2.5vw, 1.65rem) clamp(1.25rem, 2.4vw, 1.65rem);
-    padding-left: clamp(2rem, 3.6vw, 2.5rem);
+    padding-left: clamp(1.1rem, 2vw, 1.5rem);
     font-size: clamp(0.94rem, 1.02vw, 0.98rem);
     line-height: 1.68;
     text-align: left;
@@ -448,7 +429,7 @@ main > section::before {
     grid-column: span 7;
     display: flex;
     flex-direction: column;
-    background: var(--grey-300);
+    background: var(--grey-200);
     color: var(--ink);
     border-bottom: 1.5px solid var(--ink);
     border-right: 1.5px solid var(--ink);
@@ -473,14 +454,14 @@ main > section::before {
     overflow-x: hidden;
     overflow-y: auto;
     border: 1.5px solid var(--ink);
-    background: var(--cream);
+    background: var(--grey-100);
     overscroll-behavior: contain;
-    scrollbar-color: var(--ink) var(--cream);
+    scrollbar-color: var(--ink) var(--grey-100);
     scrollbar-width: thin;
 }
 
 .news.scroll-panel:focus-visible {
-    outline: 3px solid var(--red);
+    outline: 3px solid var(--ink);
     outline-offset: 3px;
 }
 
@@ -489,7 +470,7 @@ main > section::before {
 }
 
 .news.scroll-panel::-webkit-scrollbar-track {
-    background: var(--cream);
+    background: var(--grey-100);
 }
 
 .news.scroll-panel::-webkit-scrollbar-thumb {
@@ -498,7 +479,7 @@ main > section::before {
 
 .news.scroll-panel > .col,
 .news.scroll-panel .news_list {
-    background: var(--cream);
+    background: var(--grey-100);
 }
 
 .news_list {
@@ -572,7 +553,7 @@ main > section::before {
     grid-column: span 5;
     display: flex;
     flex-direction: column;
-    background: var(--grey-200);
+    background: var(--grey-300);
     color: var(--ink);
     border-bottom: 1.5px solid var(--ink);
     --block-num: var(--ink-25);
@@ -763,12 +744,12 @@ main > section::before {
 .venue-eacl,
 .venue-inlg {
     background: var(--ink);
-    color: var(--cream);
+    color: var(--grey-100);
 }
 
 .venue-arxiv {
     border: 0;
-    background: var(--cream);
+    background: var(--grey-100);
     color: var(--ink);
     outline: 2px solid var(--ink);
     outline-offset: -2px;
@@ -835,7 +816,7 @@ main > section::before {
     display: block;
     padding: 0.32em 0.62em;
     background: var(--ink);
-    color: var(--cream);
+    color: var(--grey-100);
     font-family: var(--font-mono);
     font-size: 0.58rem;
     font-weight: 700;
@@ -883,7 +864,7 @@ main > section::before {
 
 .archive-toggle:hover {
     background: var(--ink);
-    color: var(--cream);
+    color: var(--grey-100);
     text-decoration: none;
 }
 
@@ -1002,7 +983,7 @@ footer a:hover {
         margin: 0;
         padding-top: 2.9rem;
         border-right: 0;
-        border-bottom: 1.5px solid var(--ink);
+        border-bottom: 0;
     }
 
     #news {
