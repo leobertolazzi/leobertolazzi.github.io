@@ -16,11 +16,13 @@
     --bar: #d3d3cf;      /* header + footer */
 
     /* Single accent colour: sky / ice blue */
-    --yellow: #7cc6fe;
+    --accent: #7cc6fe;
 
     --ink-12: rgba(22, 22, 22, 0.12);
     --ink-18: rgba(22, 22, 22, 0.16);
     --ink-25: rgba(22, 22, 22, 0.18);
+    --ink-35: rgba(22, 22, 22, 0.35);
+    --ink-50: rgba(22, 22, 22, 0.5);
 
     --font-display: "Space Grotesk", "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,7 +31,7 @@
     --block-pad: clamp(1.35rem, 3.2vw, 1.75rem);
     --gutter: clamp(1.25rem, 4vw, 2rem);
 
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
@@ -38,7 +40,6 @@
 *::after {
     box-sizing: border-box;
     border-radius: 0 !important;
-    box-shadow: none !important;
 }
 
 html {
@@ -49,7 +50,7 @@ html {
 body {
     font-family: var(--font-body);
     color: var(--ink);
-    background: var(--grey-100);
+    background: var(--grey-200);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -60,14 +61,12 @@ body.home {
     max-width: 840px;
     margin: 0 auto;
     padding: 0;
-    background: var(--grey-100);
-    border-left: 1.5px solid var(--ink);
-    border-right: 1.5px solid var(--ink);
+    background: var(--grey-200);
     line-height: 1.65;
 }
 
 ::selection {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
 }
 
@@ -132,7 +131,7 @@ a[href]:hover {
 }
 
 *:focus-visible {
-    outline: 3px solid var(--yellow);
+    outline: 3px solid var(--accent);
     outline-offset: 3px;
 }
 
@@ -141,7 +140,7 @@ a[href]:hover {
 #experience,
 .blog_nav_bar,
 footer {
-    --focus: var(--yellow);
+    --focus: var(--accent);
 }
 
 /* --------------------------------------------------------------------------
@@ -151,7 +150,7 @@ footer {
 .hl {
     display: inline;
     color: var(--ink);
-    background: var(--yellow);
+    background: var(--accent);
     padding: 0 0.12em;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -171,12 +170,10 @@ footer {
         "email";
     align-items: start;
     gap: 1.15rem;
-    padding: clamp(1.5rem, 3.2vw, 1.85rem) var(--block-pad) clamp(1.25rem, 2.4vw, 1.5rem);
-    background: var(--bar);
+    padding: clamp(1.5rem, 3.2vw, 1.85rem) var(--block-pad) var(--block-pad);
+    background: transparent;
     color: var(--ink);
-    border-top: 8px solid var(--yellow);
-    border-bottom: 1.5px solid var(--ink);
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
@@ -196,7 +193,7 @@ footer {
 
 .site-header h1 .hl {
     display: inline;
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     letter-spacing: -0.025em;
     margin-right: -0.04em;
@@ -216,7 +213,7 @@ footer {
 }
 
 .affiliation .hl {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-weight: 700;
     padding: 0.12em 0.4em;
@@ -239,9 +236,9 @@ a[href].header-email {
 }
 
 a[href].header-email:hover {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
-    border-bottom-color: var(--yellow);
+    border-bottom-color: var(--accent);
 }
 
 /* ==========================================================================
@@ -250,34 +247,17 @@ a[href].header-email:hover {
 
 main {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     align-items: stretch;
+    align-content: start;
     width: 100%;
     flex: 1 0 auto;
-    counter-reset: block;
 }
 
 main > section {
     position: relative;
-    counter-increment: block;
     min-width: 0;
     padding: var(--block-pad);
-}
-
-main > section::before {
-    content: counter(block, decimal-leading-zero);
-    position: absolute;
-    top: clamp(0.55rem, 1.4vw, 0.85rem);
-    right: clamp(0.9rem, 2vw, 1.25rem);
-    z-index: 3;
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 4.4vw, 2.35rem);
-    font-weight: 700;
-    line-height: 0.75;
-    letter-spacing: -0.06em;
-    color: var(--block-num, var(--ink));
-    opacity: 0.95;
-    pointer-events: none;
 }
 
 /* Section title as a solid marker bar. */
@@ -286,7 +266,7 @@ main > section::before {
     width: auto !important;
     margin: 0 0 clamp(1rem, 2vw, 1.25rem) !important;
     padding: 0.08em 0.22em 0.13em;
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-family: var(--font-display);
     font-size: clamp(1.75rem, 3.8vw, 2.15rem);
@@ -318,12 +298,15 @@ main > section::before {
     display: grid;
     grid-template-columns: 266px minmax(0, 1fr);
     align-items: stretch;
+    margin-top: var(--block-pad);
     padding: 0;
     background: var(--grey-100);
     color: var(--ink);
-    border-bottom: 1.5px solid var(--ink);
+    border: 1.5px solid var(--ink);
+    /* Flat offset shadow: right and bottom only */
+    box-shadow: 8px 8px 0 var(--ink-25);
     --block-num: var(--ink-25);
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
@@ -382,7 +365,7 @@ main > section::before {
 }
 
 .socials a[href]:hover {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
 }
 
@@ -426,20 +409,19 @@ main > section::before {
    -------------------------------------------------------------------------- */
 
 #news {
-    grid-column: span 7;
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
-    background: var(--grey-200);
+    background: transparent;
     color: var(--ink);
-    border-bottom: 1.5px solid var(--ink);
-    border-right: 1.5px solid var(--ink);
+    margin-top: calc(var(--block-pad) + 8px);
     --block-num: var(--ink-25);
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
 #news .section-title {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-size: clamp(1.45rem, 2.8vw, 1.75rem);
 }
@@ -448,7 +430,7 @@ main > section::before {
     display: block;
     flex: 1 1 auto;
     width: 100% !important;
-    max-height: 380px;
+    max-height: 320px;
     margin: 0 !important;
     padding: 0;
     overflow-x: hidden;
@@ -550,20 +532,19 @@ main > section::before {
    -------------------------------------------------------------------------- */
 
 #experience {
-    grid-column: span 5;
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
-    background: var(--grey-300);
+    background: transparent;
     color: var(--ink);
-    border-bottom: 1.5px solid var(--ink);
     --block-num: var(--ink-25);
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
 #experience .section-title {
     align-self: flex-start;
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-size: clamp(1.45rem, 2.8vw, 1.75rem);
 }
@@ -590,7 +571,7 @@ main > section::before {
 .experience-item {
     position: relative;
     padding: 0.5rem 0 0.6rem;
-    border-top: 1px solid var(--ink-18);
+    border-top: 1px solid var(--ink-35);
 }
 
 .experience-item:first-child {
@@ -605,7 +586,7 @@ main > section::before {
     left: -1.485rem;
     width: 0.55rem;
     height: 0.55rem;
-    background: var(--yellow);
+    background: var(--accent);
     border: 1.5px solid var(--ink);
 }
 
@@ -625,6 +606,7 @@ main > section::before {
 }
 
 .experience-role {
+    display: inline;
     margin: 0.16rem 0 0;
     font-family: var(--font-display);
     font-size: 0.96rem;
@@ -633,10 +615,15 @@ main > section::before {
     line-height: 1.22;
 }
 
+.experience-role::after {
+    content: ",";
+    margin-right: 0.35em;
+}
+
 .experience-org {
-    margin: 0.1rem 0 0;
-    font-size: 0.8rem;
-    line-height: 1.4;
+    display: inline;
+    font-size: 0.88rem;
+    line-height: 1.22;
     color: var(--ink-muted);
 }
 
@@ -647,15 +634,15 @@ main > section::before {
 
 #publications {
     grid-column: 1 / -1;
-    background: var(--grey-100);
+    background: transparent;
     color: var(--ink);
     --block-num: var(--ink-25);
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
 #publications .section-title {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-size: clamp(1.5rem, 3vw, 1.85rem);
 }
@@ -700,7 +687,7 @@ main > section::before {
     margin: 0;
     padding: 0.95rem 0;
     border: 0;
-    border-top: 1px solid var(--ink-18);
+    border-top: 1px solid var(--ink-35);
     background: transparent;
 }
 
@@ -772,7 +759,7 @@ main > section::before {
     display: inline-block;
     margin-top: 0.25rem;
     padding: 0.12em 0.4em;
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-family: var(--font-mono);
     font-size: 0.56rem;
@@ -829,14 +816,14 @@ main > section::before {
 }
 
 .pub-links a:hover {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
 }
 
 .pub-archive {
-    margin-top: 0.5rem;
+    margin-top: 0;
     border: 0;
-    border-top: 1px solid var(--ink-18);
+    border-top: 1px solid var(--ink-35);
     background: transparent;
 }
 
@@ -844,7 +831,7 @@ main > section::before {
     display: inline-block;
     margin: 0.7rem 0 0.2rem;
     padding: 0.4em 0.7em;
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink);
     font-family: var(--font-mono);
     font-size: 0.68rem;
@@ -897,14 +884,13 @@ footer {
     width: 100%;
     margin-top: 0 !important;
     padding: clamp(1rem, 2.4vw, 1.7rem) var(--block-pad);
-    background: var(--bar);
+    background: transparent;
     color: var(--ink);
-    border-top: 1.5px solid var(--ink);
     font-family: var(--font-mono);
     font-size: 0.68rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    --hl-bg: var(--yellow);
+    --hl-bg: var(--accent);
     --hl-fg: var(--ink);
 }
 
@@ -926,7 +912,7 @@ footer a[href].text-muted {
 }
 
 footer a:hover {
-    background: var(--yellow);
+    background: var(--accent);
     color: var(--ink) !important;
     text-decoration: none;
     opacity: 1;
@@ -941,24 +927,16 @@ footer a:hover {
     #experience .section-title {
         font-size: clamp(1.45rem, 2.8vw, 1.75rem);
     }
-
-    .news.scroll-panel {
-        max-height: 420px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .news.scroll-panel {
-        max-height: 380px;
-    }
 }
 
 @media (max-width: 760px) {
     body.container,
     body.home {
-        width: 100%;
-        border-left: 0;
-        border-right: 0;
+        width: auto;
+        margin-left: 0.5rem;
+        /* 0.5rem page spacing + 8px of shadow so the shadow
+           never eats into the visible right-hand margin */
+        margin-right: 1rem;
     }
 
     main {
@@ -1011,10 +989,6 @@ footer a:hover {
         padding-left: var(--block-pad);
     }
 
-    .news.scroll-panel {
-        max-height: 280px;
-    }
-
     .publications .publication {
         grid-template-columns: 3.4rem minmax(0, 1fr) auto;
         column-gap: 0.7rem;
@@ -1031,7 +1005,6 @@ footer a:hover {
             "email";
         gap: 1rem;
         padding-top: 1.8rem;
-        border-top-width: 8px;
     }
 
     a[href].header-email {
