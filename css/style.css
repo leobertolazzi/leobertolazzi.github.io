@@ -28,7 +28,7 @@
     --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-mono: "Space Mono", "Ubuntu Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-    --block-pad: clamp(1.35rem, 3.2vw, 1.75rem);
+    --block-pad: clamp(1rem, 2.5vw, 1.35rem);
     --gutter: clamp(1.25rem, 4vw, 2rem);
 
     --hl-bg: var(--accent);
@@ -435,11 +435,16 @@ main > section {
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    border: 1.5px solid var(--ink);
-    background: var(--grey-100);
+    border: 0;
+    background: transparent;
     overscroll-behavior: contain;
-    scrollbar-color: var(--ink) var(--grey-100);
-    scrollbar-width: thin;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .news.scroll-panel {
+        scrollbar-color: var(--ink-25) transparent;
+        scrollbar-width: thin;
+    }
 }
 
 .news.scroll-panel:focus-visible {
@@ -448,27 +453,54 @@ main > section {
 }
 
 .news.scroll-panel::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    -webkit-appearance: none;
+    border-radius: 0 !important;
 }
 
 .news.scroll-panel::-webkit-scrollbar-track {
-    background: var(--grey-100);
+    background: transparent;
+    border-radius: 0 !important;
 }
 
 .news.scroll-panel::-webkit-scrollbar-thumb {
-    background: var(--ink);
+    background: var(--ink-25);
+    -webkit-appearance: none;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 
 .news.scroll-panel > .col,
 .news.scroll-panel .news_list {
-    background: var(--grey-100);
+    background: transparent;
+}
+
+.news-scroll-hint {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.35rem;
+    margin: 0.55rem 0 0;
+    color: var(--ink-muted);
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.news-scroll-hint svg {
+    width: 13px;
+    height: 13px;
+    stroke-width: 2.5;
 }
 
 .news_list {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0 clamp(0.8rem, 1.6vw, 1.2rem);
+    padding: 0;
     list-style: none;
 }
 
@@ -478,7 +510,7 @@ main > section {
     column-gap: 0.8rem;
     align-items: start;
     padding: 0.85rem 0;
-    border-top: 1px solid var(--ink-18);
+    border-top: 1px solid var(--ink-35);
     font-weight: 500;
     line-height: 1.4;
 }
