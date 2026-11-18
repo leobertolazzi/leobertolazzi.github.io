@@ -354,11 +354,11 @@
         <div class="row w-100">
             <div class="col w-100">
                 
-                <h2 class="row w-100 section-title main_color">Publications</h2>
+                <h2 class="row w-100 section-title main_color">Selected Publications</h2>
                 
 
                 
-                <p class="row w-100 section-subtitle text-muted">See also on&nbsp;<a href="https://scholar.google.com/citations?user=dJ6WZ1YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+                <p class="row w-100 section-subtitle text-muted">See more on&nbsp;<a href="https://scholar.google.com/citations?user=dJ6WZ1YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
                 
             </div>
         </div>
@@ -369,46 +369,15 @@
 
 
 <div class="publications w-100" aria-label="Publication list">
-    <section class="publication-group featured-group" aria-label="Recent publications">
-        <article class="publication">
-            <div class="pub-side"><span class="pub-year">2026</span><span class="pub-venue-short venue-arxiv">arXiv</span></div>
-            <div class="pub-body">
-                <h3 class="publication-title">FALSIFYBENCH: Evaluating Inductive Reasoning in LLMs with Rule Discovery Games</h3>
-                <p class="pub-details"><span class="pub-authors"><strong>Leonardo Bertolazzi</strong>, Katya Tentori, Raffaella Bernardi</span></p>
-            </div>
-            <div class="pub-links-col"><span class="pub-links"><a href="https://arxiv.org/abs/2606.04751" target="_blank" rel="noopener noreferrer">PDF</a><a href="https://github.com/leobertolazzi/FalsifyBench.git" target="_blank" rel="noopener noreferrer">Code</a></span></div>
-        </article>
+    <section class="publication-group featured-group" aria-label="Selected publications">
         <article class="publication">
             <div class="pub-side"><span class="pub-year">2026</span><span class="pub-venue-short venue-acl">ACL</span></div>
             <div class="pub-body">
                 <h3 class="publication-title">How Language Models Conflate Logical Validity with Plausibility: A Representational Analysis of Content Effects</h3>
                 <p class="pub-details"><span class="pub-authors"><strong>Leonardo Bertolazzi</strong>, Sandro Pezzelle, Raffaella Bernardi</span></p>
             </div>
-            <div class="pub-links-col"><span class="pub-links"><a href="https://arxiv.org/abs/2510.06700" target="_blank" rel="noopener noreferrer">PDF</a><a href="https://github.com/leobertolazzi/content-effect-interpretability.git" target="_blank" rel="noopener noreferrer">Code</a></span></div>
+            <div class="pub-links-col"><span class="pub-links"><a href="https://aclanthology.org/2026.findings-acl.454/" target="_blank" rel="noopener noreferrer">PDF</a><a href="https://github.com/leobertolazzi/content-effect-interpretability.git" target="_blank" rel="noopener noreferrer">Code</a></span></div>
         </article>
-        <article class="publication">
-            <div class="pub-side"><span class="pub-year">2026</span><span class="pub-venue-short venue-eacl">EACL</span></div>
-            <div class="pub-body">
-                <h3 class="publication-title">Teaching Small Language Models to Learn Logic through Meta-Learning</h3>
-                <p class="pub-details"><span class="pub-authors"><strong>Leonardo Bertolazzi</strong>, Manuel Vargas Guzmán, Raffaella Bernardi, Maciej Malicki, Jakub Szymanik</span></p>
-            </div>
-            <div class="pub-links-col"><span class="pub-links"><a href="https://arxiv.org/abs/2505.14313" target="_blank" rel="noopener noreferrer">PDF</a><a href="https://github.com/leobertolazzi/meta-learning-logic.git" target="_blank" rel="noopener noreferrer">Code</a></span></div>
-        </article>
-        <article class="publication">
-            <div class="pub-side"><span class="pub-year">2025</span><span class="pub-venue-short venue-emnlp">EMNLP</span></div>
-            <div class="pub-body">
-                <h3 class="publication-title">The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It</h3>
-                <p class="pub-details"><span class="pub-authors"><strong>Leonardo Bertolazzi</strong>, Philipp Mondorf, Barbara Plank, Raffaella Bernardi</span></p>
-            </div>
-            <div class="pub-links-col"><span class="pub-links"><a href="https://arxiv.org/abs/2502.11771" target="_blank" rel="noopener noreferrer">PDF</a><a href="https://github.com/mainlp/validation-gap" target="_blank" rel="noopener noreferrer">Code</a></span></div>
-        </article>
-    </section>
-
-    <details class="pub-archive">
-        <summary class="archive-toggle">
-            <span class="archive-toggle-text">Show earlier work</span>
-        </summary>
-        <div class="archive-list">
         <article class="publication">
             <div class="pub-side"><span class="pub-year">2025</span><span class="pub-venue-short venue-acl">ACL</span></div>
             <div class="pub-body">
@@ -433,8 +402,7 @@
             </div>
             <div class="pub-links-col"><span class="pub-links"><a href="https://aclanthology.org/2023.inlg-main.11/" target="_blank" rel="noopener noreferrer">PDF</a><a href="https://github.com/leobertolazzi/20q-chatgpt" target="_blank" rel="noopener noreferrer">Code</a></span></div>
         </article>
-        </div>
-    </details>
+    </section>
 </div>
 </div>
 </div>
@@ -452,13 +420,6 @@
 </footer><script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 <script>
     feather.replace()
-    document.querySelectorAll('.pub-archive').forEach(function (el) {
-        var label = el.querySelector('.archive-toggle-text');
-        if (!label) return;
-        el.addEventListener('toggle', function () {
-            label.textContent = el.open ? 'Hide earlier work' : 'Show earlier work';
-        });
-    });
 </script></body>
 
 </html>
